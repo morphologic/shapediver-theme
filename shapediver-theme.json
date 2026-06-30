@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "themeOverrides": {
+    "primaryColor": "kastell",
+    "fontFamily": "Inter, Arial, sans-serif",
+    "defaultRadius": "4px",
+    "colors": {
+      "kastell": [
+        "#f5f5f2",
+        "#e8e6df",
+        "#d6d2c7",
+        "#bdb7a8",
+        "#9f9683",
+        "#7d725d",
+        "#675d4a",
+        "#52493a",
+        "#383225",
+        "#211d16"
+      ]
+    },
+    "components": {
+      "Button": {
+        "defaultProps": {
+          "radius": "sm"
+        }
+      },
+      "ActionIcon": {
+        "defaultProps": {
+          "radius": "sm",
+          "size": "lg"
+        }
+      },
+      "Paper": {
+        "defaultProps": {
+          "radius": "sm",
+          "shadow": "xs"
+        }
+      },
+      "Card": {
+        "defaultProps": {
+          "radius": "sm",
+          "shadow": "xs"
+        }
+      },
+      "Input": {
+        "defaultProps": {
+          "radius": "sm"
+        }
+      },
+      "Select": {
+        "defaultProps": {
+          "radius": "sm"
+        }
+      },
+      "NumberInput": {
+        "defaultProps": {
+          "radius": "sm"
+        }
+      },
+      "ViewportIcons": {
+        "defaultProps": {
+          "size": "56",
+          "enableCamerasBtn": true,
+          "enableArBtn": false
+        }
+      },
+      "ViewportOverlayWrapper": {
+        "defaultProps": {
+          "position": "bottom-left"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShapeDiver Theme</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Inter, Arial, sans-serif;
+        color: #211d16;
+        background: #f5f5f2;
+      }
+
+      main {
+        width: min(720px, calc(100% - 32px));
+      }
+
+      code {
+        display: block;
+        padding: 16px;
+        overflow-wrap: anywhere;
+        border: 1px solid #d6d2c7;
+        border-radius: 4px;
+        background: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>ShapeDiver Theme</h1>
+      <p>Use this theme file URL in the ShapeDiver App Builder <code>g=</code> parameter:</p>
+      <code id="theme-url"></code>
+    </main>
+    <script>
+      const themeUrl = new URL("shapediver-theme.json", window.location.href).href;
+      document.getElementById("theme-url").textContent = themeUrl;
+    </script>
+  </body>
+</html>
