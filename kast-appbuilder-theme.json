@@ -1,0 +1,181 @@
+{
+  "version": "1.0",
+  "themeOverrides": {
+    "fontFamily": "Inter, Arial, sans-serif",
+    "defaultRadius": "6px",
+    "primaryColor": "kastNeutral",
+    "colors": {
+      "kastNeutral": [
+        "#f7f7f7",
+        "#f0f0f0",
+        "#e3e3e3",
+        "#cdcdcd",
+        "#a8a8a8",
+        "#6d6d6d",
+        "#4b4b4b",
+        "#3d3d3d",
+        "#2b2b2b",
+        "#1d1d1d"
+      ]
+    },
+    "black": "#2b2b2b",
+    "white": "#ffffff",
+    "fontSizes": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "md": "0.875rem",
+      "lg": "1.25rem",
+      "xl": "1.5rem"
+    },
+    "headings": {
+      "fontFamily": "Inter, Arial, sans-serif",
+      "fontWeight": "600"
+    },
+    "other": {
+      "forceColorScheme": "light",
+      "defaultFontWeight": "400",
+      "defaultFontWeightMedium": "500",
+      "defaultFontWeightBold": "700"
+    },
+    "components": {
+      "AppBuilderTemplateSelector": {
+        "defaultProps": {
+          "template": "appshell"
+        }
+      },
+      "AppBuilderAppShellTemplatePage": {
+        "defaultProps": {
+          "navbarBreakpoint": "md",
+          "navbarWidth": {
+            "base": "100%",
+            "md": 320,
+            "lg": 320
+          },
+          "columns": 6,
+          "rows": 12,
+          "rightColumns": 1,
+          "bottomRows": 1,
+          "bottomFullWidth": false,
+          "rightBorder": false,
+          "keepBottomInGrid": false
+        }
+      },
+      "AppBuilderContainerWrapper": {
+        "defaultProps": {
+          "containerThemeOverrides": {
+            "appshell": {
+              "right": {
+                "colors": {
+                  "gray": [
+                    "#f7f7f7",
+                    "#f0f0f0",
+                    "#e3e3e3",
+                    "#cdcdcd",
+                    "#a8a8a8",
+                    "#6d6d6d",
+                    "#4b4b4b",
+                    "#3d3d3d",
+                    "#2b2b2b",
+                    "#1d1d1d"
+                  ]
+                },
+                "components": {
+                  "Paper": {
+                    "defaultProps": {
+                      "withBorder": false,
+                      "shadow": "none",
+                      "bg": "#f0f0f0"
+                    }
+                  }
+                }
+              },
+              "bottom": {
+                "components": {
+                  "Paper": {
+                    "defaultProps": {
+                      "withBorder": false,
+                      "shadow": "none",
+                      "bg": "#f0f0f0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Paper": {
+        "defaultProps": {
+          "withBorder": true,
+          "shadow": "none",
+          "radius": "6px",
+          "bg": "#ffffff"
+        }
+      },
+      "Button": {
+        "defaultProps": {
+          "variant": "default",
+          "radius": "xl",
+          "fw": 500,
+          "size": "sm"
+        }
+      },
+      "Tabs": {
+        "defaultProps": {
+          "variant": "default",
+          "color": "dark"
+        }
+      },
+      "Text": {
+        "defaultProps": {
+          "c": "#2b2b2b",
+          "fw": 400
+        }
+      },
+      "Switch": {
+        "defaultProps": {
+          "color": "dark",
+          "size": "sm"
+        }
+      },
+      "AppBuilderImage": {
+        "defaultProps": {
+          "withBorder": false,
+          "radius": "6px",
+          "fit": "contain"
+        }
+      },
+      "ParameterLabelComponent": {
+        "defaultProps": {
+          "fontWeight": "500"
+        }
+      },
+      "ParameterSelectComponent": {
+        "defaultProps": {
+          "componentSettings": {}
+        }
+      },
+      "ViewportBranding": {
+        "defaultProps": {
+          "light": {
+            "backgroundColor": "#e3e3e3"
+          }
+        }
+      },
+      "ViewportIcons": {
+        "defaultProps": {
+          "color": "#2b2b2b",
+          "colorDisabled": "#cdcdcd",
+          "variant": "subtle",
+          "variantDisabled": "transparent",
+          "size": 32
+        }
+      },
+      "ViewportOverlayWrapper": {
+        "defaultProps": {
+          "position": "bottom-right"
+        }
+      }
+    }
+  }
+}
