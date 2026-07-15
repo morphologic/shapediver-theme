@@ -173,7 +173,12 @@
           "colorDisabled": "#cdcdcd",
           "variant": "subtle",
           "variantDisabled": "transparent",
-          "size": 32
+          "size": 24,
+          "iconStyle": {
+            "width": 12,
+            "height": 12,
+            "strokeWidth": 1.5
+          }
         }
       },
       "ViewportOverlayWrapper": {
