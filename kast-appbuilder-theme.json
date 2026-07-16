@@ -169,8 +169,15 @@
             "gap": 2
           },
           "imageProps": {
-            "fit": "contain",
-            "fallbackSrc": "not-found.svg"
+            "fit": "cover",
+            "w": "100%",
+            "h": "100%",
+            "fallbackSrc": "not-found.svg",
+            "style": {
+              "width": "100%",
+              "height": "100%",
+              "objectFit": "cover"
+            }
           },
           "labelProps": {
             "size": "xs",
@@ -199,8 +206,15 @@
             "gap": 2
           },
           "imageProps": {
-            "fit": "contain",
-            "fallbackSrc": "not-found.svg"
+            "fit": "cover",
+            "w": "100%",
+            "h": "100%",
+            "fallbackSrc": "not-found.svg",
+            "style": {
+              "width": "100%",
+              "height": "100%",
+              "objectFit": "cover"
+            }
           },
           "labelProps": {
             "size": "xs",
@@ -212,7 +226,9 @@
         "defaultProps": {
           "withBorder": false,
           "radius": "6px",
-          "fit": "contain"
+          "fit": "cover",
+          "w": "100%",
+          "h": "100%"
         }
       },
       "ParameterLabelComponent": {
