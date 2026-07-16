@@ -90,7 +90,7 @@
                     "defaultProps": {
                       "withBorder": false,
                       "shadow": "none",
-                      "bg": "#f0f0f0"
+                      "bg": "#ffffff"
                     }
                   }
                 }
@@ -132,7 +132,8 @@
             "p": 4,
             "withBorder": false,
             "shadow": "none",
-            "radius": "6px"
+            "radius": "6px",
+            "bg": "#ffffff"
           }
         }
       },
