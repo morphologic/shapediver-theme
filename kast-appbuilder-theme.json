@@ -60,6 +60,12 @@
           "keepBottomInGrid": false
         }
       },
+      "AppBuilderVerticalContainer": {
+        "defaultProps": {
+          "p": 4,
+          "gap": 4
+        }
+      },
       "AppBuilderContainerWrapper": {
         "defaultProps": {
           "containerThemeOverrides": {
@@ -110,6 +116,19 @@
           "shadow": "none",
           "radius": "6px",
           "bg": "#ffffff"
+        }
+      },
+      "AppBuilderControlsWidgetComponent": {
+        "defaultProps": {
+          "stackProps": {
+            "gap": 4
+          },
+          "elementPaperProps": {
+            "p": 4,
+            "withBorder": false,
+            "shadow": "none",
+            "radius": "6px"
+          }
         }
       },
       "Button": {
