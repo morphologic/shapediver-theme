@@ -163,7 +163,10 @@
           },
           "cardProps": {
             "p": 0,
-            "radius": "6px"
+            "radius": "6px",
+            "style": {
+              "boxShadow": "none"
+            }
           },
           "stackProps": {
             "gap": 2
@@ -200,7 +203,10 @@
           },
           "cardProps": {
             "p": 0,
-            "radius": "6px"
+            "radius": "6px",
+            "style": {
+              "boxShadow": "none"
+            }
           },
           "stackProps": {
             "gap": 2
