@@ -1,10 +1,5 @@
 {
   "version": "1.0",
-  "sessions": [
-    {
-      "slug": "modularcabinets-15072026-9"
-    }
-  ],
   "themeOverrides": {
     "fontFamily": "Inter, Arial, sans-serif",
     "defaultRadius": "6px",
