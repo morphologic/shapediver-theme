@@ -181,7 +181,15 @@
       "SelectCarouselComponent": {
         "defaultProps": {
           "carouselProps": {
-            "slideGap": 4
+            "slideGap": 4,
+            "slideSize": {
+              "base": "33.333333%"
+            },
+            "emblaOptions": {
+              "align": "start",
+              "loop": true,
+              "slidesToScroll": 1
+            }
           },
           "cardProps": {
             "p": 0,
@@ -189,6 +197,10 @@
           },
           "stackProps": {
             "gap": 2
+          },
+          "imageProps": {
+            "fit": "contain",
+            "fallbackSrc": "not-found.svg"
           },
           "labelProps": {
             "size": "xs",
