@@ -118,6 +118,11 @@
           "bg": "#ffffff"
         }
       },
+      "Stack": {
+        "defaultProps": {
+          "gap": 4
+        }
+      },
       "AppBuilderControlsWidgetComponent": {
         "defaultProps": {
           "stackProps": {
