@@ -141,9 +141,12 @@
       "ViewportIconButton": {
         "defaultProps": {
           "actionIconProps": {
-            "size": 24,
+            "size": 18,
             "style": {
-              "margin": "0.188rem"
+              "margin": 0,
+              "padding": 0,
+              "minWidth": 18,
+              "minHeight": 18
             }
           },
           "iconProps": {
@@ -185,11 +188,20 @@
           "colorDisabled": "#cdcdcd",
           "variant": "subtle",
           "variantDisabled": "transparent",
-          "size": 24,
+          "size": 18,
+          "style": {
+            "gap": 0,
+            "padding": 0
+          },
           "iconStyle": {
             "width": 12,
             "height": 12,
             "strokeWidth": 1.5
+          },
+          "paperProps": {
+            "px": 0,
+            "py": 0,
+            "shadow": "none"
           }
         }
       },
