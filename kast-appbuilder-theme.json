@@ -143,6 +143,23 @@
           "size": "sm"
         }
       },
+      "ViewportIconButton": {
+        "defaultProps": {
+          "actionIconProps": {
+            "size": 24,
+            "style": {
+              "margin": "0.188rem"
+            }
+          },
+          "iconProps": {
+            "style": {
+              "width": 12,
+              "height": 12
+            },
+            "strokeWidth": 1.5
+          }
+        }
+      },
       "AppBuilderImage": {
         "defaultProps": {
           "withBorder": false,
