@@ -48,8 +48,8 @@
           "navbarBreakpoint": "md",
           "navbarWidth": {
             "base": "100%",
-            "md": 320,
-            "lg": 320
+            "md": 360,
+            "lg": 360
           },
           "columns": 5,
           "rows": 12,
