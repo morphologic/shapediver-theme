@@ -189,6 +189,8 @@
           },
           "cardProps": {
             "p": 0,
+            "px": 0,
+            "py": 0,
             "radius": "6px",
             "bg": "#ffffff",
             "style": {
@@ -238,6 +240,8 @@
           },
           "cardProps": {
             "p": 0,
+            "px": 0,
+            "py": 0,
             "radius": "6px",
             "bg": "#ffffff",
             "style": {
