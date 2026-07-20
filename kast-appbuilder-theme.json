@@ -193,8 +193,7 @@
             "bg": "#ffffff",
             "style": {
               "--card-selected-color": "#2b2b2b",
-              "backgroundColor": "#ffffff",
-              "boxShadow": "none"
+              "backgroundColor": "#ffffff"
             }
           },
           "stackProps": {
@@ -243,8 +242,7 @@
             "bg": "#ffffff",
             "style": {
               "--card-selected-color": "#2b2b2b",
-              "backgroundColor": "#ffffff",
-              "boxShadow": "none"
+              "backgroundColor": "#ffffff"
             }
           },
           "stackProps": {
