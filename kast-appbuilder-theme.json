@@ -90,7 +90,7 @@
                     "defaultProps": {
                       "withBorder": false,
                       "shadow": "none",
-                      "bg": "#ffffff"
+                      "bg": "#f0f0f0"
                     }
                   }
                 }
@@ -133,7 +133,7 @@
             "withBorder": false,
             "shadow": "none",
             "radius": "6px",
-            "bg": "#ffffff"
+            "bg": "#f0f0f0"
           }
         }
       },
@@ -189,7 +189,9 @@
           "cardProps": {
             "p": 0,
             "radius": "6px",
+            "bg": "#ffffff",
             "style": {
+              "backgroundColor": "#ffffff",
               "boxShadow": "none"
             }
           },
@@ -198,20 +200,25 @@
           },
           "imageProps": {
             "fit": "contain",
-            "w": "88%",
-            "h": "82%",
+            "w": "68%",
+            "h": "68%",
             "fallbackSrc": "not-found.svg",
             "style": {
-              "width": "88%",
-              "height": "82%",
-              "top": "4%",
-              "left": "6%",
+              "width": "68%",
+              "height": "68%",
+              "top": "8%",
+              "left": "16%",
               "objectFit": "contain"
             }
           },
           "labelProps": {
             "size": "xs",
-            "fontWeight": "400"
+            "fontWeight": "400",
+            "ta": "center",
+            "style": {
+              "textAlign": "center",
+              "width": "100%"
+            }
           }
         }
       },
@@ -231,7 +238,9 @@
           "cardProps": {
             "p": 0,
             "radius": "6px",
+            "bg": "#ffffff",
             "style": {
+              "backgroundColor": "#ffffff",
               "boxShadow": "none"
             }
           },
@@ -240,20 +249,25 @@
           },
           "imageProps": {
             "fit": "contain",
-            "w": "88%",
-            "h": "82%",
+            "w": "68%",
+            "h": "68%",
             "fallbackSrc": "not-found.svg",
             "style": {
-              "width": "88%",
-              "height": "82%",
-              "top": "4%",
-              "left": "6%",
+              "width": "68%",
+              "height": "68%",
+              "top": "8%",
+              "left": "16%",
               "objectFit": "contain"
             }
           },
           "labelProps": {
             "size": "xs",
-            "fontWeight": "400"
+            "fontWeight": "400",
+            "ta": "center",
+            "style": {
+              "textAlign": "center",
+              "width": "100%"
+            }
           }
         }
       },
@@ -262,8 +276,8 @@
           "withBorder": false,
           "radius": "6px",
           "fit": "contain",
-          "w": "88%",
-          "h": "82%"
+          "w": "68%",
+          "h": "68%"
         }
       },
       "ParameterLabelComponent": {
