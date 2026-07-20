@@ -226,7 +226,8 @@
             "ta": "center",
             "style": {
               "textAlign": "center",
-              "width": "100%"
+              "width": "100%",
+              "paddingBottom": "6px"
             }
           }
         }
@@ -277,7 +278,8 @@
             "ta": "center",
             "style": {
               "textAlign": "center",
-              "width": "100%"
+              "width": "100%",
+              "paddingBottom": "6px"
             }
           }
         }
