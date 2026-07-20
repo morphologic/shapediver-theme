@@ -149,7 +149,13 @@
       "Tabs": {
         "defaultProps": {
           "variant": "default",
-          "color": "dark"
+          "color": "dark",
+          "style": {
+            "--mantine-color-body": "#f0f0f0",
+            "--mantine-color-default": "#ffffff",
+            "--mantine-color-default-hover": "#ffffff",
+            "--mantine-color-default-border": "#d9d9d9"
+          }
         }
       },
       "Text": {
