@@ -71,6 +71,7 @@
           "containerThemeOverrides": {
             "appshell": {
               "right": {
+                "white": "#f0f0f0",
                 "colors": {
                   "gray": [
                     "#f7f7f7",
