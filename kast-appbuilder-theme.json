@@ -107,9 +107,58 @@
                   },
                   "AppBuilderTextWidgetComponent": {
                     "defaultProps": {
+                      "p": 0,
+                      "withBorder": false,
+                      "shadow": "none",
+                      "bg": "transparent",
                       "styles": {
                         "root": {
-                          "overflow": "visible"
+                          "alignItems": "center",
+                          "display": "flex",
+                          "minHeight": 0,
+                          "overflow": "hidden"
+                        }
+                      }
+                    }
+                  },
+                  "MarkdownWidgetComponent": {
+                    "defaultProps": {
+                      "setHeadingFontSize": true,
+                      "themeOverride": {
+                        "headings": {
+                          "sizes": {
+                            "h2": {
+                              "fontSize": "1.5rem",
+                              "lineHeight": "1.1"
+                            },
+                            "h3": {
+                              "fontSize": "1.25rem",
+                              "lineHeight": "1.1"
+                            }
+                          }
+                        },
+                        "components": {
+                          "Title": {
+                            "defaultProps": {
+                              "mb": 0
+                            },
+                            "styles": {
+                              "root": {
+                                "lineHeight": "1.1",
+                                "marginBottom": "0"
+                              }
+                            }
+                          },
+                          "Text": {
+                            "defaultProps": {
+                              "mb": 0
+                            },
+                            "styles": {
+                              "root": {
+                                "marginBottom": "0"
+                              }
+                            }
+                          }
                         }
                       }
                     }
