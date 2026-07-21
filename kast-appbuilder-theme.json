@@ -115,8 +115,10 @@
                         "root": {
                           "alignItems": "center",
                           "display": "flex",
+                          "height": "auto !important",
                           "minHeight": 0,
-                          "overflow": "hidden"
+                          "overflow": "hidden !important",
+                          "padding": "0 !important"
                         }
                       }
                     }
