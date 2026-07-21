@@ -104,6 +104,15 @@
                       "shadow": "none",
                       "bg": "#f0f0f0"
                     }
+                  },
+                  "AppBuilderTextWidgetComponent": {
+                    "defaultProps": {
+                      "styles": {
+                        "root": {
+                          "overflow": "visible"
+                        }
+                      }
+                    }
                   }
                 }
               }
