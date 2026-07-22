@@ -106,6 +106,25 @@
                       "p": 12
                     }
                   },
+                  "Group": {
+                    "defaultProps": {
+                      "align": "center",
+                      "gap": 12,
+                      "justify": "space-between",
+                      "wrap": "nowrap",
+                      "style": {
+                        "--group-align": "center",
+                        "--group-gap": "12px",
+                        "--group-justify": "space-between"
+                      },
+                      "styles": {
+                        "root": {
+                          "boxSizing": "border-box",
+                          "width": "100%"
+                        }
+                      }
+                    }
+                  },
                   "AppBuilderHorizontalContainer": {
                     "defaultProps": {
                       "w": "100%",
@@ -116,10 +135,17 @@
                       "wrap": "nowrap",
                       "p": 12,
                       "style": {
-                        "boxSizing": "border-box"
+                        "--group-align": "center",
+                        "--group-gap": "12px",
+                        "--group-justify": "space-between",
+                        "boxSizing": "border-box",
+                        "padding": "12px",
+                        "width": "100%"
                       },
                       "styles": {
                         "root": {
+                          "justifyContent": "space-between",
+                          "width": "100%",
                           "& > button:last-of-type": {
                             "--button-bg": "#2b2b2b",
                             "--button-bd": "1px solid #2b2b2b",
