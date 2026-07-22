@@ -102,7 +102,63 @@
                     "defaultProps": {
                       "withBorder": false,
                       "shadow": "none",
-                      "bg": "#f0f0f0"
+                      "bg": "#f0f0f0",
+                      "p": 12
+                    }
+                  },
+                  "AppBuilderHorizontalContainer": {
+                    "defaultProps": {
+                      "w": "100%",
+                      "h": "100%",
+                      "justify": "space-between",
+                      "align": "center",
+                      "gap": 12,
+                      "wrap": "nowrap",
+                      "p": 12,
+                      "style": {
+                        "boxSizing": "border-box"
+                      },
+                      "styles": {
+                        "root": {
+                          "& > button:last-of-type": {
+                            "--button-bg": "#2b2b2b",
+                            "--button-bd": "1px solid #2b2b2b",
+                            "--button-color": "#ffffff",
+                            "--button-hover": "#1d1d1d",
+                            "backgroundColor": "#2b2b2b",
+                            "border": "1px solid #2b2b2b",
+                            "color": "#ffffff"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "AppBuilderActionComponent": {
+                    "defaultProps": {
+                      "variant": "default",
+                      "radius": "xl",
+                      "fw": 500,
+                      "size": "sm",
+                      "style": {
+                        "--button-bg": "#ffffff",
+                        "--button-bd": "1px solid #d9d9d9",
+                        "--button-color": "#2b2b2b",
+                        "--button-hover": "#f7f7f7",
+                        "border": "1px solid #d9d9d9",
+                        "backgroundColor": "#ffffff",
+                        "color": "#2b2b2b",
+                        "height": "2.5rem",
+                        "paddingInline": "1.25rem"
+                      },
+                      "actionIconProps": {
+                        "size": "2.5rem",
+                        "variant": "default",
+                        "style": {
+                          "border": "1px solid #d9d9d9",
+                          "backgroundColor": "#ffffff",
+                          "color": "#2b2b2b"
+                        }
+                      }
                     }
                   },
                   "AppBuilderTextWidgetComponent": {
@@ -115,10 +171,12 @@
                         "root": {
                           "alignItems": "center",
                           "display": "flex",
+                          "fontSize": "1.5rem",
                           "height": "auto !important",
                           "minHeight": 0,
                           "overflow": "hidden !important",
-                          "padding": "0 !important"
+                          "padding": "0 !important",
+                          "whiteSpace": "nowrap"
                         }
                       }
                     }
@@ -130,11 +188,11 @@
                         "headings": {
                           "sizes": {
                             "h2": {
-                              "fontSize": "1.5rem",
+                              "fontSize": "1.75rem",
                               "lineHeight": "1.1"
                             },
                             "h3": {
-                              "fontSize": "1.25rem",
+                              "fontSize": "1.5rem",
                               "lineHeight": "1.1"
                             }
                           }
@@ -157,6 +215,7 @@
                             },
                             "styles": {
                               "root": {
+                                "fontSize": "1.5rem",
                                 "marginBottom": "0"
                               }
                             }
