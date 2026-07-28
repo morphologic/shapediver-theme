@@ -374,6 +374,8 @@
                           "display": "flex",
                           "fontSize": "1.5rem",
                           "height": "auto !important",
+                          "marginLeft": "auto",
+                          "margin-left": "auto",
                           "minHeight": 0,
                           "overflow": "hidden !important",
                           "padding": "0 !important",
@@ -384,6 +386,10 @@
                   },
                   "MarkdownWidgetComponent": {
                     "defaultProps": {
+                      "style": {
+                        "marginLeft": "auto",
+                        "margin-left": "auto"
+                      },
                       "setHeadingFontSize": true,
                       "themeOverride": {
                         "headings": {
