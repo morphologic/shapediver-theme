@@ -127,7 +127,7 @@
                   },
                   "AppBuilderHorizontalContainer": {
                     "defaultProps": {
-                      "w": "100%",
+                      "w": "75vw",
                       "h": "100%",
                       "justify": "space-between",
                       "align": "center",
@@ -146,10 +146,12 @@
                         "column-gap": "12px",
                         "display": "grid",
                         "grid-template-columns": "auto minmax(0, 1fr) auto",
+                        "max-width": "75vw",
+                        "min-width": "75vw",
                         "overflow": "hidden",
                         "padding": "12px",
                         "text-align": "center",
-                        "width": "100%"
+                        "width": "75vw"
                       },
                       "styles": {
                         "root": {
@@ -165,7 +167,11 @@
                           "textAlign": "center",
                           "text-align": "center",
                           "justifyContent": "stretch",
-                          "width": "100%",
+                          "maxWidth": "75vw",
+                          "max-width": "75vw",
+                          "minWidth": "75vw",
+                          "min-width": "75vw",
+                          "width": "75vw",
                           "& > section": {
                             "minWidth": 0
                           },
