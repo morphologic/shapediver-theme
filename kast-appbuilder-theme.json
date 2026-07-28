@@ -147,8 +147,8 @@
                       "styles": {
                         "root": {
                           "display": "grid",
-                          "gridTemplateColumns": "auto minmax(0, 1fr) auto",
-                          "grid-template-columns": "auto minmax(0, 1fr) auto",
+                          "gridTemplateColumns": "auto minmax(0, 1fr) auto auto",
+                          "grid-template-columns": "auto minmax(0, 1fr) auto auto",
                           "alignContent": "center",
                           "alignItems": "center",
                           "align-content": "center",
@@ -160,12 +160,18 @@
                           "justifyContent": "stretch",
                           "width": "100%",
                           "& > section": {
-                            "display": "contents"
+                            "minWidth": 0
                           },
                           "& > section > .mantine-Paper-root": {
                             "backgroundColor": "transparent !important",
                             "boxShadow": "none !important",
                             "padding": "0 !important"
+                          },
+                          "& > section:first-of-type": {
+                            "gridColumn": "1",
+                            "grid-column": "1",
+                            "justifySelf": "start",
+                            "justify-self": "start"
                           },
                           "& > section:first-of-type .mantine-Group-root": {
                             "--group-align": "center",
@@ -185,10 +191,15 @@
                             "backgroundColor": "#ffffff !important",
                             "border": "1px solid #d9d9d9 !important",
                             "color": "#2b2b2b !important",
+                            "borderRadius": "999px",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
                             "height": "2.5rem",
                             "paddingInline": "1.25rem"
                           },
                           "& > section:nth-of-type(2)": {
+                            "gridColumn": "3",
+                            "grid-column": "3",
                             "justifySelf": "end",
                             "justify-self": "end",
                             "minWidth": 0
@@ -202,6 +213,20 @@
                             "fontWeight": 700,
                             "lineHeight": "1.1",
                             "whiteSpace": "nowrap"
+                          },
+                          "& > section:nth-of-type(2) p, & > section:nth-of-type(2) span": {
+                            "fontSize": "1rem",
+                            "fontWeight": 400
+                          },
+                          "& > section:nth-of-type(2) strong, & > section:nth-of-type(2) b, & > section:nth-of-type(2) h1, & > section:nth-of-type(2) h2, & > section:nth-of-type(2) h3": {
+                            "fontSize": "1.5rem",
+                            "fontWeight": 700
+                          },
+                          "& > section:last-of-type": {
+                            "gridColumn": "4",
+                            "grid-column": "4",
+                            "justifySelf": "end",
+                            "justify-self": "end"
                           },
                           "& > section:last-of-type .mantine-Group-root": {
                             "--group-align": "center",
@@ -221,6 +246,9 @@
                             "backgroundColor": "#2b2b2b !important",
                             "border": "1px solid #2b2b2b !important",
                             "color": "#ffffff !important",
+                            "borderRadius": "999px",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
                             "height": "2.5rem",
                             "paddingInline": "1.25rem"
                           },
