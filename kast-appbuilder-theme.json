@@ -55,7 +55,7 @@
           "rows": 12,
           "rightColumns": 1,
           "bottomRows": 1,
-          "bottomFullWidth": true,
+          "bottomFullWidth": false,
           "rightBorder": false,
           "keepBottomInGrid": true
         }
