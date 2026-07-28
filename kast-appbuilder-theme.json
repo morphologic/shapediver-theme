@@ -248,7 +248,20 @@
                           },
                           "& > section:nth-of-type(2) .mantine-Paper-root": {
                             "backgroundColor": "transparent !important",
+                            "marginLeft": "auto",
+                            "margin-left": "auto",
                             "padding": "0 !important"
+                          },
+                          "&:has(> .mantine-Paper-root) > .mantine-Paper-root": {
+                            "backgroundColor": "transparent !important",
+                            "boxShadow": "none !important",
+                            "marginLeft": "auto",
+                            "margin-left": "auto",
+                            "padding": "0 !important"
+                          },
+                          "&:has(> .mantine-Paper-root) > button": {
+                            "marginLeft": "12px",
+                            "margin-left": "12px"
                           },
                           "& > section:nth-of-type(2) *": {
                             "fontSize": "1.5rem",
