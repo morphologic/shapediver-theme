@@ -1,0 +1,759 @@
+{
+  "version": "1.0",
+  "themeOverrides": {
+    "fontFamily": "Inter, Arial, sans-serif",
+    "defaultRadius": "6px",
+    "primaryColor": "kastNeutral",
+    "colors": {
+      "kastNeutral": [
+        "#f7f7f7",
+        "#f0f0f0",
+        "#e3e3e3",
+        "#cdcdcd",
+        "#a8a8a8",
+        "#6d6d6d",
+        "#4b4b4b",
+        "#3d3d3d",
+        "#2b2b2b",
+        "#1d1d1d"
+      ]
+    },
+    "black": "#2b2b2b",
+    "white": "#f0f0f0",
+    "fontSizes": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "md": "0.875rem",
+      "lg": "1.25rem",
+      "xl": "1.5rem"
+    },
+    "headings": {
+      "fontFamily": "Inter, Arial, sans-serif",
+      "fontWeight": "600"
+    },
+    "other": {
+      "forceColorScheme": "light",
+      "defaultFontWeight": "400",
+      "defaultFontWeightMedium": "500",
+      "defaultFontWeightBold": "700"
+    },
+    "components": {
+      "AppBuilderTemplateSelector": {
+        "defaultProps": {
+          "template": "appshell"
+        }
+      },
+      "AppBuilderAppShellTemplatePage": {
+        "defaultProps": {
+          "headerHeight": {
+            "base": "4.75rem",
+            "md": "4rem"
+          },
+          "navbarBreakpoint": "md",
+          "navbarWidth": {
+            "base": "100%",
+            "md": 360,
+            "lg": 360
+          },
+          "columns": 4,
+          "rows": {
+            "base": 14,
+            "md": 12
+          },
+          "rightColumns": 1,
+          "bottomRows": {
+            "base": 3,
+            "md": 1
+          },
+          "bottomFullWidth": false,
+          "rightBorder": false,
+          "keepBottomInGrid": true
+        }
+      },
+      "AppBuilderVerticalContainer": {
+        "defaultProps": {
+          "p": 4,
+          "gap": 4
+        }
+      },
+      "AppBuilderContainerWrapper": {
+        "defaultProps": {
+          "containerThemeOverrides": {
+            "appshell": {
+              "right": {
+                "white": "#f0f0f0",
+                "colors": {
+                  "gray": [
+                    "#f7f7f7",
+                    "#f0f0f0",
+                    "#e3e3e3",
+                    "#cdcdcd",
+                    "#a8a8a8",
+                    "#6d6d6d",
+                    "#4b4b4b",
+                    "#3d3d3d",
+                    "#2b2b2b",
+                    "#1d1d1d"
+                  ]
+                },
+                "components": {
+                  "Paper": {
+                    "defaultProps": {
+                      "withBorder": false,
+                      "shadow": "none",
+                      "bg": "#f0f0f0"
+                    }
+                  }
+                }
+              },
+              "bottom": {
+                "components": {
+                  "Paper": {
+                    "defaultProps": {
+                      "withBorder": false,
+                      "shadow": "none",
+                      "bg": "#f0f0f0",
+                      "p": {
+                        "base": 0,
+                        "md": 12
+                      },
+                      "w": {
+                        "base": "100%",
+                        "md": "auto"
+                      },
+                      "styles": {
+                        "root": {
+                          "gridColumn": "1 / -1",
+                          "gridRow": 3,
+                          "minWidth": 0
+                        }
+                      }
+                    }
+                  },
+                  "Group": {
+                    "defaultProps": {
+                      "align": "center",
+                      "gap": 12,
+                      "justify": "space-between",
+                      "wrap": "nowrap",
+                      "style": {
+                        "--group-align": "center",
+                        "--group-gap": "12px",
+                        "--group-justify": "space-between"
+                      },
+                      "styles": {
+                        "root": {
+                          "boxSizing": "border-box",
+                          "width": "100%"
+                        }
+                      }
+                    }
+                  },
+                  "AppBuilderHorizontalContainer": {
+                    "defaultProps": {
+                      "w": "100%",
+                      "h": "100%",
+                      "display": {
+                        "base": "grid",
+                        "md": "flex"
+                      },
+                      "justify": "space-between",
+                      "align": "center",
+                      "gap": 12,
+                      "wrap": "nowrap",
+                      "p": {
+                        "base": 24,
+                        "md": 12
+                      },
+                      "style": {
+                        "--group-align": "center",
+                        "--group-gap": "12px",
+                        "--group-justify": "space-between",
+                        "boxSizing": "border-box",
+                        "height": "100%",
+                        "width": "100%",
+                        "gridColumn": "1 / -1",
+                        "gridRow": "1 / -1",
+                        "gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+                        "gridTemplateRows": "minmax(1.75rem, auto) 40px 40px",
+                        "alignContent": "center",
+                        "alignItems": "center",
+                        "columnGap": "12px",
+                        "rowGap": "12px",
+                        "overflow": "hidden"
+                      },
+                      "styles": {
+                        "root": {
+                          "boxSizing": "border-box",
+                          "width": "100%",
+                          "height": "100%",
+                          "gridColumn": "1 / -1",
+                          "gridRow": "1 / -1",
+                          "gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+                          "gridTemplateRows": "minmax(1.75rem, auto) 40px 40px",
+                          "alignContent": "center",
+                          "alignItems": "center",
+                          "columnGap": "12px",
+                          "rowGap": "12px",
+                          "overflow": "hidden",
+                          "&:has(> section)": {
+                            "display": "grid",
+                            "gridTemplateColumns": "auto minmax(0, 1fr) auto auto",
+                            "grid-template-columns": "auto minmax(0, 1fr) auto auto",
+                            "alignContent": "center",
+                            "alignItems": "center",
+                            "align-content": "center",
+                            "align-items": "center",
+                            "columnGap": "12px",
+                            "overflow": "hidden",
+                            "textAlign": "center",
+                            "text-align": "center",
+                            "justifyContent": "stretch",
+                            "padding": "12px",
+                            "width": "100%"
+                          },
+                          "&:has(> section) > section": {
+                            "minWidth": 0
+                          },
+                          "&:has(> section) > section:nth-of-type(1)": {
+                            "gridColumn": "1",
+                            "grid-column": "1",
+                            "justifySelf": "start",
+                            "justify-self": "start"
+                          },
+                          "&:has(> section) > section:nth-of-type(2)": {
+                            "gridColumn": "3",
+                            "grid-column": "3",
+                            "justifySelf": "end",
+                            "justify-self": "end",
+                            "marginLeft": "auto",
+                            "margin-left": "auto",
+                            "minWidth": 0
+                          },
+                          "&:has(> section) > section:nth-of-type(3)": {
+                            "gridColumn": "4",
+                            "grid-column": "4",
+                            "justifySelf": "end",
+                            "justify-self": "end"
+                          },
+                          "& > section > .mantine-Paper-root": {
+                            "backgroundColor": "transparent !important",
+                            "boxShadow": "none !important",
+                            "padding": "0 !important"
+                          },
+                          "& > section:first-of-type": {
+                            "gridColumn": "1",
+                            "grid-column": "1",
+                            "justifySelf": "start",
+                            "justify-self": "start"
+                          },
+                          "& > section:first-of-type .mantine-Group-root": {
+                            "--group-align": "center",
+                            "--group-gap": "12px",
+                            "--group-justify": "flex-start",
+                            "--group-wrap": "nowrap",
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexWrap": "nowrap",
+                            "justifyContent": "flex-start"
+                          },
+                          "& > section:first-of-type button": {
+                            "--button-bg": "#ffffff !important",
+                            "--button-bd": "1px solid #d9d9d9 !important",
+                            "--button-color": "#2b2b2b !important",
+                            "--button-hover": "#f7f7f7 !important",
+                            "backgroundColor": "#ffffff !important",
+                            "border": "1px solid #d9d9d9 !important",
+                            "color": "#2b2b2b !important",
+                            "borderRadius": "999px",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
+                            "height": "2.5rem",
+                            "paddingInline": "1.25rem"
+                          },
+                          "& > *:nth-child(1) button, & > *:nth-child(1) .mantine-Button-root, & > *:nth-child(2) button, & > *:nth-child(2) .mantine-Button-root": {
+                            "--button-bg": "#ffffff !important",
+                            "--button-bd": "1px solid #d9d9d9 !important",
+                            "--button-color": "#2b2b2b !important",
+                            "--button-hover": "#f7f7f7 !important",
+                            "backgroundColor": "#ffffff !important",
+                            "border": "1px solid #d9d9d9 !important",
+                            "borderRadius": "999px",
+                            "color": "#2b2b2b !important",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
+                            "height": "2.5rem",
+                            "paddingInline": "1.25rem"
+                          },
+                          "& > section:nth-of-type(2)": {
+                            "gridColumn": "3",
+                            "grid-column": "3",
+                            "justifySelf": "end",
+                            "justify-self": "end",
+                            "marginLeft": "auto",
+                            "margin-left": "auto",
+                            "minWidth": 0
+                          },
+                          "& > section:nth-of-type(2) .mantine-Paper-root": {
+                            "backgroundColor": "transparent !important",
+                            "marginLeft": "auto",
+                            "margin-left": "auto",
+                            "padding": "0 !important"
+                          },
+                          "&:has(> .mantine-Paper-root) > .mantine-Paper-root": {
+                            "backgroundColor": "transparent !important",
+                            "boxShadow": "none !important",
+                            "marginLeft": "auto",
+                            "margin-left": "auto",
+                            "padding": "0 !important"
+                          },
+                          "&:has(> .mantine-Paper-root) > button": {
+                            "marginLeft": "12px",
+                            "margin-left": "12px"
+                          },
+                          "&:has(> .mantine-Paper-root) > button:not(:last-of-type)": {
+                            "--button-bg": "#ffffff !important",
+                            "--button-bd": "1px solid #d9d9d9 !important",
+                            "--button-color": "#2b2b2b !important",
+                            "--button-hover": "#f7f7f7 !important",
+                            "backgroundColor": "#ffffff !important",
+                            "border": "1px solid #d9d9d9 !important",
+                            "borderRadius": "999px",
+                            "color": "#2b2b2b !important",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
+                            "height": "2.5rem",
+                            "paddingInline": "1.25rem"
+                          },
+                          "&:has(> .mantine-Paper-root) > button:last-of-type": {
+                            "--button-bg": "var(--mantine-color-kastNeutral-filled) !important",
+                            "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
+                            "--button-color": "#ffffff !important",
+                            "--button-hover": "var(--mantine-color-kastNeutral-filled-hover) !important",
+                            "backgroundColor": "var(--mantine-color-kastNeutral-filled) !important",
+                            "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
+                            "borderRadius": "999px",
+                            "color": "#ffffff !important",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
+                            "height": "2.5rem",
+                            "paddingInline": "1.25rem"
+                          },
+                          "& > section:nth-of-type(2) *": {
+                            "fontSize": "1.5rem",
+                            "fontWeight": 700,
+                            "lineHeight": "1.1",
+                            "whiteSpace": "nowrap"
+                          },
+                          "& > section:nth-of-type(2) p, & > section:nth-of-type(2) span": {
+                            "fontSize": "1rem",
+                            "fontWeight": 400
+                          },
+                          "& > section:nth-of-type(2) strong, & > section:nth-of-type(2) b, & > section:nth-of-type(2) h1, & > section:nth-of-type(2) h2, & > section:nth-of-type(2) h3": {
+                            "fontSize": "1.5rem",
+                            "fontWeight": 700
+                          },
+                          "& > section:last-of-type": {
+                            "gridColumn": "4",
+                            "grid-column": "4",
+                            "justifySelf": "end",
+                            "justify-self": "end"
+                          },
+                          "& > section:last-of-type .mantine-Group-root": {
+                            "--group-align": "center",
+                            "--group-gap": "12px",
+                            "--group-justify": "flex-end",
+                            "--group-wrap": "nowrap",
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexWrap": "nowrap",
+                            "justifyContent": "flex-end"
+                          },
+                          "& > section:last-of-type button": {
+                            "--button-bg": "var(--mantine-color-kastNeutral-filled) !important",
+                            "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
+                            "--button-color": "#ffffff !important",
+                            "--button-hover": "var(--mantine-color-kastNeutral-filled-hover) !important",
+                            "backgroundColor": "var(--mantine-color-kastNeutral-filled) !important",
+                            "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
+                            "color": "#ffffff !important",
+                            "borderRadius": "999px",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
+                            "height": "2.5rem",
+                            "paddingInline": "1.25rem"
+                          },
+                          "& > *:nth-child(3) button, & > *:nth-child(3) .mantine-Button-root, & > *:last-child button, & > *:last-child .mantine-Button-root": {
+                            "--button-bg": "var(--mantine-color-kastNeutral-filled) !important",
+                            "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
+                            "--button-color": "#ffffff !important",
+                            "--button-hover": "var(--mantine-color-kastNeutral-filled-hover) !important",
+                            "backgroundColor": "var(--mantine-color-kastNeutral-filled) !important",
+                            "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
+                            "borderRadius": "999px",
+                            "color": "#ffffff !important",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
+                            "height": "2.5rem",
+                            "paddingInline": "1.25rem"
+                          },
+                          "& > button:last-of-type": {
+                            "--button-bg": "var(--mantine-color-kastNeutral-filled) !important",
+                            "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
+                            "--button-color": "#ffffff !important",
+                            "--button-hover": "var(--mantine-color-kastNeutral-filled-hover) !important",
+                            "backgroundColor": "var(--mantine-color-kastNeutral-filled) !important",
+                            "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
+                            "borderRadius": "999px",
+                            "color": "#ffffff !important",
+                            "fontSize": "0.875rem",
+                            "fontWeight": 500,
+                            "height": "2.5rem",
+                            "paddingInline": "1.25rem"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "AppBuilderActionComponent": {
+                    "defaultProps": {
+                      "variant": "filled",
+                      "color": "kastNeutral",
+                      "radius": "xl",
+                      "fw": 500,
+                      "size": "sm",
+                      "w": {
+                        "base": "100%",
+                        "md": "auto"
+                      },
+                      "style": {
+                        "--button-bg": "var(--mantine-color-kastNeutral-filled)",
+                        "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent",
+                        "--button-color": "#ffffff",
+                        "--button-hover": "var(--mantine-color-kastNeutral-filled-hover)",
+                        "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent",
+                        "backgroundColor": "var(--mantine-color-kastNeutral-filled)",
+                        "color": "#ffffff",
+                        "height": "2.5rem",
+                        "paddingInline": "1.25rem"
+                      },
+                      "styles": {
+                        "root": {
+                          "gridColumn": "1 / -1",
+                          "gridRow": 2,
+                          "minWidth": 0
+                        }
+                      },
+                      "actionIconProps": {
+                        "size": "2.5rem",
+                        "variant": "default",
+                        "style": {
+                          "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent",
+                          "backgroundColor": "var(--mantine-color-kastNeutral-filled)",
+                          "color": "#ffffff"
+                        }
+                      }
+                    }
+                  },
+                  "AppBuilderTextWidgetComponent": {
+                    "defaultProps": {
+                      "p": 0,
+                      "withBorder": false,
+                      "shadow": "none",
+                      "bg": "transparent",
+                      "w": {
+                        "base": "auto",
+                        "md": "auto"
+                      },
+                      "styles": {
+                        "root": {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "fontSize": "1.5rem",
+                          "height": "auto !important",
+                          "marginLeft": "auto",
+                          "minHeight": 0,
+                          "overflow": "visible !important",
+                          "padding": "0 !important",
+                          "whiteSpace": "nowrap",
+                          "gridColumn": "1 / -1",
+                          "gridRow": 1,
+                          "justifySelf": "end"
+                        }
+                      }
+                    }
+                  },
+                  "MarkdownWidgetComponent": {
+                    "defaultProps": {
+                      "style": {
+                        "marginLeft": "auto",
+                        "margin-left": "auto"
+                      },
+                      "setHeadingFontSize": true,
+                      "themeOverride": {
+                        "headings": {
+                          "sizes": {
+                            "h2": {
+                              "fontSize": "1.75rem",
+                              "lineHeight": "1.1"
+                            },
+                            "h3": {
+                              "fontSize": "1.5rem",
+                              "lineHeight": "1.1"
+                            }
+                          }
+                        },
+                        "components": {
+                          "Title": {
+                            "defaultProps": {
+                              "mb": 0
+                            },
+                            "styles": {
+                              "root": {
+                                "lineHeight": "1.1",
+                                "marginBottom": "0"
+                              }
+                            }
+                          },
+                          "Text": {
+                            "defaultProps": {
+                              "mb": 0
+                            },
+                            "styles": {
+                              "root": {
+                                "fontSize": "1.5rem",
+                                "marginBottom": "0"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Paper": {
+        "defaultProps": {
+          "withBorder": true,
+          "shadow": "none",
+          "radius": "6px",
+          "bg": "#ffffff"
+        }
+      },
+      "Stack": {
+        "defaultProps": {
+          "gap": 4
+        }
+      },
+      "AppBuilderControlsWidgetComponent": {
+        "defaultProps": {
+          "stackProps": {
+            "gap": 4
+          },
+          "elementPaperProps": {
+            "p": 4,
+            "withBorder": false,
+            "shadow": "none",
+            "radius": "6px",
+            "bg": "#f0f0f0"
+          }
+        }
+      },
+      "Button": {
+        "defaultProps": {
+          "variant": "default",
+          "radius": "xl",
+          "fw": 500,
+          "size": "sm"
+        }
+      },
+      "Tabs": {
+        "defaultProps": {
+          "variant": "default",
+          "color": "dark",
+          "style": {
+            "--mantine-color-body": "#f0f0f0",
+            "--mantine-color-default": "#ffffff",
+            "--mantine-color-default-hover": "#ffffff",
+            "--mantine-color-default-border": "#d9d9d9"
+          }
+        }
+      },
+      "Text": {
+        "defaultProps": {
+          "c": "#2b2b2b",
+          "fw": 400
+        }
+      },
+      "Switch": {
+        "defaultProps": {
+          "color": "dark",
+          "size": "sm"
+        }
+      },
+      "ViewportIconButton": {
+        "defaultProps": {
+          "actionIconProps": {
+            "size": 24,
+            "style": {
+              "margin": "0.188rem"
+            }
+          },
+          "iconProps": {
+            "style": {
+              "width": 12,
+              "height": 12
+            },
+            "strokeWidth": 1.5
+          }
+        }
+      },
+      "SelectGridComponent": {
+        "defaultProps": {
+          "gridProps": {
+            "cols": 3,
+            "spacing": 4
+          },
+          "cardProps": {
+            "p": 2,
+            "px": 2,
+            "py": 2,
+            "radius": "6px",
+            "bg": "#ffffff",
+            "style": {
+              "--card-selected-color": "#2b2b2b",
+              "backgroundColor": "#ffffff"
+            }
+          },
+          "stackProps": {
+            "gap": 2
+          },
+          "imageProps": {
+            "fit": "contain",
+            "w": "100%",
+            "h": "100%",
+            "fallbackSrc": "not-found.svg",
+            "style": {
+              "width": "100%",
+              "height": "100%",
+              "top": "0",
+              "left": "0",
+              "objectFit": "contain"
+            }
+          },
+          "labelProps": {
+            "size": "xs",
+            "fontWeight": "400",
+            "ta": "center",
+            "style": {
+              "textAlign": "center",
+              "width": "100%",
+              "paddingBottom": "6px"
+            }
+          }
+        }
+      },
+      "SelectCarouselComponent": {
+        "defaultProps": {
+          "carouselProps": {
+            "slideGap": 4,
+            "slideSize": {
+              "base": "33.333333%"
+            },
+            "emblaOptions": {
+              "align": "start",
+              "loop": true,
+              "slidesToScroll": 1
+            }
+          },
+          "cardProps": {
+            "p": 2,
+            "px": 2,
+            "py": 2,
+            "radius": "6px",
+            "bg": "#ffffff",
+            "style": {
+              "--card-selected-color": "#2b2b2b",
+              "backgroundColor": "#ffffff"
+            }
+          },
+          "stackProps": {
+            "gap": 2
+          },
+          "imageProps": {
+            "fit": "contain",
+            "w": "100%",
+            "h": "100%",
+            "fallbackSrc": "not-found.svg",
+            "style": {
+              "width": "100%",
+              "height": "100%",
+              "top": "0",
+              "left": "0",
+              "objectFit": "contain"
+            }
+          },
+          "labelProps": {
+            "size": "xs",
+            "fontWeight": "400",
+            "ta": "center",
+            "style": {
+              "textAlign": "center",
+              "width": "100%",
+              "paddingBottom": "6px"
+            }
+          }
+        }
+      },
+      "AppBuilderImage": {
+        "defaultProps": {
+          "withBorder": false,
+          "radius": "6px",
+          "fit": "contain",
+          "w": "100%",
+          "h": "100%"
+        }
+      },
+      "ParameterLabelComponent": {
+        "defaultProps": {
+          "fontWeight": "500"
+        }
+      },
+      "ParameterSelectComponent": {
+        "defaultProps": {
+          "componentSettings": {}
+        }
+      },
+      "ViewportBranding": {
+        "defaultProps": {
+          "light": {
+            "backgroundColor": "#e3e3e3"
+          }
+        }
+      },
+      "ViewportIcons": {
+        "defaultProps": {
+          "color": "#2b2b2b",
+          "colorDisabled": "#cdcdcd",
+          "variant": "subtle",
+          "variantDisabled": "transparent",
+          "size": 24,
+          "iconStyle": {
+            "width": 12,
+            "height": 12,
+            "strokeWidth": 1.5
+          }
+        }
+      },
+      "ViewportOverlayWrapper": {
+        "defaultProps": {
+          "position": "bottom-right"
+        }
+      }
+    }
+  }
+}
