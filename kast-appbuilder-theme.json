@@ -148,30 +148,6 @@
                         "root": {
                           "boxSizing": "border-box",
                           "width": "100%",
-                          "& .app-builder-form-widget": {
-                            "maxWidth": "34rem",
-                            "minWidth": 0,
-                            "width": "34rem"
-                          },
-                          "& .app-builder-form-widget > .mantine-Paper-root": {
-                            "backgroundColor": "transparent !important",
-                            "boxShadow": "none !important",
-                            "padding": "0 !important"
-                          },
-                          "& .app-builder-form-widget > .mantine-Paper-root > .mantine-Stack-root": {
-                            "alignItems": "flex-end",
-                            "display": "grid",
-                            "gap": "12px",
-                            "gridTemplateColumns": "minmax(12rem, 1fr) auto",
-                            "width": "100%"
-                          },
-                          "& .app-builder-form-widget > .mantine-Paper-root > .mantine-Stack-root > .mantine-Paper-root": {
-                            "backgroundColor": "transparent !important",
-                            "boxShadow": "none !important",
-                            "margin": "0 !important",
-                            "minWidth": 0,
-                            "padding": "0 !important"
-                          },
                           "&:has(> section)": {
                             "display": "grid",
                             "gridTemplateColumns": "auto minmax(0, 1fr) auto auto",
@@ -402,7 +378,9 @@
                         "p": 0,
                         "style": {
                           "backgroundColor": "transparent",
-                          "width": "100%"
+                          "height": "4rem",
+                          "position": "relative",
+                          "width": "36rem"
                         }
                       },
                       "elementPaperProps": {
@@ -411,7 +389,11 @@
                         "p": 0,
                         "style": {
                           "backgroundColor": "transparent",
-                          "minWidth": 0
+                          "bottom": 0,
+                          "left": 0,
+                          "minWidth": 0,
+                          "position": "absolute",
+                          "width": "18rem"
                         }
                       },
                       "exportPaperProps": {
@@ -419,7 +401,11 @@
                         "shadow": "none",
                         "p": 0,
                         "style": {
-                          "backgroundColor": "transparent"
+                          "backgroundColor": "transparent",
+                          "bottom": 0,
+                          "margin": 0,
+                          "position": "absolute",
+                          "right": 0
                         }
                       },
                       "submitButtonProps": {
