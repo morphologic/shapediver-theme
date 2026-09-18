@@ -793,6 +793,13 @@
             "style": {
               "position": "relative",
               "zIndex": 20
+            },
+            "styles": {
+              "root": {
+                "@media (max-width: 61.99em)": {
+                  "transform": "translateX(calc(100vw - 100% - 2rem))"
+                }
+              }
             }
           },
           "anchorStackProps": {
