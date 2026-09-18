@@ -790,20 +790,28 @@
         "defaultProps": {
           "mobileBreakpoint": "anchorAlways",
           "anchorPaperProps": {
-            "styles": {
-              "root": {
-                "position": "relative",
-                "zIndex": 20,
-                "@media (max-width: 61.99em)": {
-                  "position": "fixed",
-                  "top": "0.75rem",
-                  "right": "1rem",
-                  "bottom": "auto",
-                  "left": "auto",
-                  "transform": "none",
-                  "zIndex": 10000
-                }
-              }
+            "pos": {
+              "base": "fixed",
+              "md": "relative"
+            },
+            "top": {
+              "base": "0.75rem",
+              "md": "auto"
+            },
+            "right": {
+              "base": "1rem",
+              "md": "auto"
+            },
+            "bottom": {
+              "base": "auto",
+              "md": "auto"
+            },
+            "left": {
+              "base": "auto",
+              "md": "auto"
+            },
+            "style": {
+              "zIndex": 10000
             }
           },
           "anchorStackProps": {
