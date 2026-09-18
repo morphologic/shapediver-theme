@@ -790,14 +790,18 @@
         "defaultProps": {
           "mobileBreakpoint": "anchorAlways",
           "anchorPaperProps": {
-            "style": {
-              "position": "relative",
-              "zIndex": 20
-            },
             "styles": {
               "root": {
+                "position": "relative",
+                "zIndex": 20,
                 "@media (max-width: 61.99em)": {
-                  "transform": "translateX(calc(100vw - 100% - 2rem))"
+                  "position": "fixed",
+                  "top": "0.75rem",
+                  "right": "1rem",
+                  "bottom": "auto",
+                  "left": "auto",
+                  "transform": "none",
+                  "zIndex": 10000
                 }
               }
             }
