@@ -45,6 +45,10 @@
       },
       "AppBuilderAppShellTemplatePage": {
         "defaultProps": {
+          "headerHeight": {
+            "base": "4.75rem",
+            "md": "4rem"
+          },
           "navbarBreakpoint": "md",
           "navbarWidth": {
             "base": "100%",
@@ -52,9 +56,15 @@
             "lg": 360
           },
           "columns": 4,
-          "rows": 12,
+          "rows": {
+            "base": 14,
+            "md": 12
+          },
           "rightColumns": 1,
-          "bottomRows": 1,
+          "bottomRows": {
+            "base": 3,
+            "md": 1
+          },
           "bottomFullWidth": false,
           "rightBorder": false,
           "keepBottomInGrid": true
@@ -103,7 +113,21 @@
                       "withBorder": false,
                       "shadow": "none",
                       "bg": "#f0f0f0",
-                      "p": 12
+                      "p": {
+                        "base": 0,
+                        "md": 12
+                      },
+                      "w": {
+                        "base": "100%",
+                        "md": "auto"
+                      },
+                      "styles": {
+                        "root": {
+                          "gridColumn": "1 / -1",
+                          "gridRow": 3,
+                          "minWidth": 0
+                        }
+                      }
                     }
                   },
                   "Group": {
@@ -125,29 +149,64 @@
                       }
                     }
                   },
+                  "Stack": {
+                    "defaultProps": {
+                      "gap": 12,
+                      "style": {
+                        "alignItems": "end",
+                        "display": "grid",
+                        "gridTemplateColumns": "repeat(auto-fit, minmax(16rem, 1fr))",
+                        "width": "100%"
+                      }
+                    }
+                  },
                   "AppBuilderHorizontalContainer": {
                     "defaultProps": {
                       "w": "100%",
                       "h": "100%",
+                      "display": {
+                        "base": "grid",
+                        "md": "flex"
+                      },
                       "justify": "space-between",
                       "align": "center",
                       "gap": 12,
                       "wrap": "nowrap",
-                      "p": 12,
-                      "pt": 0,
-                      "pb": 0,
+                      "p": {
+                        "base": 24,
+                        "md": 12
+                      },
                       "style": {
                         "--group-align": "center",
                         "--group-gap": "12px",
                         "--group-justify": "space-between",
                         "boxSizing": "border-box",
                         "height": "100%",
-                        "width": "100%"
+                        "width": "100%",
+                        "gridColumn": "1 / -1",
+                        "gridRow": "1 / -1",
+                        "gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+                        "gridTemplateRows": "minmax(1.75rem, auto) 40px 40px",
+                        "alignContent": "center",
+                        "alignItems": "center",
+                        "columnGap": "12px",
+                        "rowGap": "12px",
+                        "overflow": "hidden"
                       },
                       "styles": {
                         "root": {
                           "boxSizing": "border-box",
                           "width": "100%",
+                          "height": "100%",
+                          "gridColumn": "1 / -1",
+                          "gridRow": "1 / -1",
+                          "gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+                          "gridTemplateRows": "minmax(1.75rem, auto) 40px 40px",
+                          "alignContent": "center",
+                          "alignItems": "center",
+                          "columnGap": "12px",
+                          "rowGap": "12px",
+                          "overflow": "hidden",
                           "&:has(> section)": {
                             "display": "grid",
                             "gridTemplateColumns": "auto minmax(0, 1fr) auto auto",
@@ -378,9 +437,13 @@
                         "p": 0,
                         "style": {
                           "backgroundColor": "transparent",
-                          "height": "4rem",
-                          "position": "relative",
-                          "width": "36rem"
+                          "width": "min(36rem, calc(100vw - 3rem))"
+                        },
+                        "styles": {
+                          "root": {
+                            "gridColumn": "auto",
+                            "gridRow": "auto"
+                          }
                         }
                       },
                       "elementPaperProps": {
@@ -389,11 +452,14 @@
                         "p": 0,
                         "style": {
                           "backgroundColor": "transparent",
-                          "bottom": 0,
-                          "left": 0,
                           "minWidth": 0,
-                          "position": "absolute",
-                          "width": "18rem"
+                          "width": "100%"
+                        },
+                        "styles": {
+                          "root": {
+                            "gridColumn": "auto",
+                            "gridRow": "auto"
+                          }
                         }
                       },
                       "exportPaperProps": {
@@ -402,14 +468,18 @@
                         "p": 0,
                         "style": {
                           "backgroundColor": "transparent",
-                          "bottom": 0,
                           "margin": 0,
-                          "position": "absolute",
-                          "right": 0
+                          "width": "100%"
+                        },
+                        "styles": {
+                          "root": {
+                            "gridColumn": "auto",
+                            "gridRow": "auto"
+                          }
                         }
                       },
                       "submitButtonProps": {
-                        "fullWidth": false,
+                        "fullWidth": true,
                         "fw": 600,
                         "mt": 0,
                         "h": "2.5rem",
@@ -428,6 +498,10 @@
                       "radius": "xl",
                       "fw": 500,
                       "size": "sm",
+                      "w": {
+                        "base": "100%",
+                        "md": "auto"
+                      },
                       "style": {
                         "--button-bg": "var(--mantine-color-kastNeutral-filled)",
                         "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent",
@@ -438,6 +512,13 @@
                         "color": "#ffffff",
                         "height": "2.5rem",
                         "paddingInline": "1.25rem"
+                      },
+                      "styles": {
+                        "root": {
+                          "gridColumn": "1 / -1",
+                          "gridRow": 2,
+                          "minWidth": 0
+                        }
                       },
                       "actionIconProps": {
                         "size": "2.5rem",
@@ -456,6 +537,10 @@
                       "withBorder": false,
                       "shadow": "none",
                       "bg": "transparent",
+                      "w": {
+                        "base": "auto",
+                        "md": "auto"
+                      },
                       "styles": {
                         "root": {
                           "alignItems": "center",
@@ -463,11 +548,13 @@
                           "fontSize": "1.5rem",
                           "height": "auto !important",
                           "marginLeft": "auto",
-                          "margin-left": "auto",
                           "minHeight": 0,
-                          "overflow": "hidden !important",
+                          "overflow": "visible !important",
                           "padding": "0 !important",
-                          "whiteSpace": "nowrap"
+                          "whiteSpace": "nowrap",
+                          "gridColumn": "1 / -1",
+                          "gridRow": 1,
+                          "justifySelf": "end"
                         }
                       }
                     }
