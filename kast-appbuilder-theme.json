@@ -160,6 +160,14 @@
                       }
                     }
                   },
+                  "Button": {
+                    "defaultProps": {
+                      "style": {
+                        "maxWidth": "100%",
+                        "minWidth": 0
+                      }
+                    }
+                  },
                   "AppBuilderHorizontalContainer": {
                     "defaultProps": {
                       "w": "100%",
@@ -511,6 +519,8 @@
                         "backgroundColor": "var(--mantine-color-kastNeutral-filled)",
                         "color": "#ffffff",
                         "height": "2.5rem",
+                        "maxWidth": "100%",
+                        "minWidth": 0,
                         "paddingInline": "1.25rem"
                       },
                       "styles": {
