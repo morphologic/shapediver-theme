@@ -148,6 +148,30 @@
                         "root": {
                           "boxSizing": "border-box",
                           "width": "100%",
+                          "& .app-builder-form-widget": {
+                            "maxWidth": "34rem",
+                            "minWidth": 0,
+                            "width": "34rem"
+                          },
+                          "& .app-builder-form-widget > .mantine-Paper-root": {
+                            "backgroundColor": "transparent !important",
+                            "boxShadow": "none !important",
+                            "padding": "0 !important"
+                          },
+                          "& .app-builder-form-widget > .mantine-Paper-root > .mantine-Stack-root": {
+                            "alignItems": "flex-end",
+                            "display": "grid",
+                            "gap": "12px",
+                            "gridTemplateColumns": "minmax(12rem, 1fr) auto",
+                            "width": "100%"
+                          },
+                          "& .app-builder-form-widget > .mantine-Paper-root > .mantine-Stack-root > .mantine-Paper-root": {
+                            "backgroundColor": "transparent !important",
+                            "boxShadow": "none !important",
+                            "margin": "0 !important",
+                            "minWidth": 0,
+                            "padding": "0 !important"
+                          },
                           "&:has(> section)": {
                             "display": "grid",
                             "gridTemplateColumns": "auto minmax(0, 1fr) auto auto",
@@ -364,6 +388,45 @@
                             "paddingInline": "1.25rem"
                           }
                         }
+                      }
+                    }
+                  },
+                  "AppBuilderFormWidgetComponent": {
+                    "defaultProps": {
+                      "stackProps": {
+                        "gap": 12
+                      },
+                      "formPaperProps": {
+                        "withBorder": false,
+                        "shadow": "none",
+                        "p": 0,
+                        "style": {
+                          "backgroundColor": "transparent",
+                          "width": "100%"
+                        }
+                      },
+                      "elementPaperProps": {
+                        "withBorder": false,
+                        "shadow": "none",
+                        "p": 0,
+                        "style": {
+                          "backgroundColor": "transparent",
+                          "minWidth": 0
+                        }
+                      },
+                      "exportPaperProps": {
+                        "withBorder": false,
+                        "shadow": "none",
+                        "p": 0,
+                        "style": {
+                          "backgroundColor": "transparent"
+                        }
+                      },
+                      "submitButtonProps": {
+                        "fullWidth": false,
+                        "mt": 0,
+                        "h": "2.5rem",
+                        "px": "1.25rem"
                       }
                     }
                   },
