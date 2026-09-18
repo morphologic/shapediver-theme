@@ -156,7 +156,7 @@
                   "Button": {
                     "defaultProps": {
                       "style": {
-                        "maxWidth": "100%",
+                        "maxWidth": "calc(100% - 1.5rem)",
                         "minWidth": 0
                       }
                     }
@@ -465,7 +465,8 @@
                         "px": "1.25rem",
                         "style": {
                           "--mantine-color-disabled": "#d9d9d9",
-                          "--mantine-color-disabled-color": "#4b4b4b"
+                          "--mantine-color-disabled-color": "#4b4b4b",
+                          "maxWidth": "100%"
                         }
                       }
                     }
@@ -490,7 +491,7 @@
                         "backgroundColor": "var(--mantine-color-kastNeutral-filled)",
                         "color": "#ffffff",
                         "height": "2.5rem",
-                        "maxWidth": "100%",
+                        "maxWidth": "calc(100% - 1.5rem)",
                         "minWidth": 0,
                         "paddingInline": "1.25rem"
                       },
