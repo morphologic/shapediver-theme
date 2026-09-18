@@ -135,7 +135,7 @@
                       "align": "center",
                       "gap": 12,
                       "justify": "space-between",
-                      "wrap": "nowrap",
+                      "wrap": "wrap",
                       "style": {
                         "--group-align": "center",
                         "--group-gap": "12px",
@@ -179,7 +179,7 @@
                       "justify": "space-between",
                       "align": "center",
                       "gap": 12,
-                      "wrap": "nowrap",
+                      "wrap": "wrap",
                       "p": {
                         "base": 24,
                         "md": 12
