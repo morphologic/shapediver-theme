@@ -3,6 +3,9 @@
   "themeOverrides": {
     "fontFamily": "Inter, Arial, sans-serif",
     "defaultRadius": "6px",
+    "breakpoints": {
+      "anchorAlways": "0em"
+    },
     "primaryColor": "kastNeutral",
     "colors": {
       "kastNeutral": [
@@ -780,6 +783,23 @@
         "defaultProps": {
           "light": {
             "backgroundColor": "#e3e3e3"
+          }
+        }
+      },
+      "ViewportAnchor2d": {
+        "defaultProps": {
+          "mobileBreakpoint": "anchorAlways",
+          "anchorPaperProps": {
+            "style": {
+              "position": "relative",
+              "zIndex": 20
+            }
+          },
+          "anchorStackProps": {
+            "style": {
+              "position": "relative",
+              "zIndex": 20
+            }
           }
         }
       },
