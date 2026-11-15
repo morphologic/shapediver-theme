@@ -125,7 +125,18 @@
                         "root": {
                           "gridColumn": "1 / -1",
                           "gridRow": 3,
-                          "minWidth": 0
+                          "minWidth": 0,
+                          "scrollbarWidth": "none",
+                          "msOverflowStyle": "none",
+                          "& *": {
+                            "scrollbarWidth": "none",
+                            "msOverflowStyle": "none"
+                          },
+                          "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
+                            "display": "none",
+                            "width": 0,
+                            "height": 0
+                          }
                         }
                       }
                     }
@@ -528,6 +539,13 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "ScrollArea": {
+                    "defaultProps": {
+                      "type": "never",
+                      "scrollbarSize": 0,
+                      "offsetScrollbars": false
                     }
                   }
                 }
