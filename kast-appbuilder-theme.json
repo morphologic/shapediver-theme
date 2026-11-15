@@ -183,7 +183,7 @@
                         "boxSizing": "border-box",
                         "height": "100%",
                         "width": "100%",
-                        "overflow": "auto",
+                        "overflow": "clip",
                         "scrollbarWidth": "none",
                         "msOverflowStyle": "none",
                         "maxHeight": "100%"
@@ -408,7 +408,7 @@
                             "height": "2.5rem",
                             "paddingInline": "1.25rem"
                           },
-                          "overflow": "auto",
+                          "overflow": "clip",
                           "scrollbarWidth": "none",
                           "maxHeight": "100%"
                         }

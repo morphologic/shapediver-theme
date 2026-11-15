@@ -180,7 +180,7 @@
                         "alignItems": "center",
                         "columnGap": "12px",
                         "rowGap": "12px",
-                        "overflow": "auto",
+                        "overflow": "clip",
                         "scrollbarWidth": "none",
                         "msOverflowStyle": "none",
                         "maxHeight": "100%"
@@ -198,7 +198,7 @@
                           "alignItems": "center",
                           "columnGap": "12px",
                           "rowGap": "12px",
-                          "overflow": "auto",
+                          "overflow": "clip",
                           "&:has(> section)": {
                             "display": "grid",
                             "gridTemplateColumns": "auto minmax(0, 1fr) auto auto",
