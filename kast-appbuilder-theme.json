@@ -647,6 +647,18 @@
         "defaultProps": {
           "position": "bottom-right"
         }
+      },
+      "AppShell": {
+        "defaultProps": {
+          "styles": {
+            "navbar": {
+              "display": "grid",
+              "gridTemplateRows": "0 minmax(0, 1fr)",
+              "overflowX": "hidden",
+              "overflowY": "auto"
+            }
+          }
+        }
       }
     }
   }
