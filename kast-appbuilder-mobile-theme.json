@@ -125,18 +125,7 @@
                         "root": {
                           "gridColumn": "1 / -1",
                           "gridRow": 3,
-                          "minWidth": 0,
-                          "scrollbarWidth": "none",
-                          "msOverflowStyle": "none",
-                          "& *": {
-                            "scrollbarWidth": "none",
-                            "msOverflowStyle": "none"
-                          },
-                          "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
-                            "display": "none",
-                            "width": 0,
-                            "height": 0
-                          }
+                          "minWidth": 0
                         }
                       }
                     }
@@ -191,7 +180,10 @@
                         "alignItems": "center",
                         "columnGap": "12px",
                         "rowGap": "12px",
-                        "overflow": "hidden"
+                        "overflow": "auto",
+                        "scrollbarWidth": "none",
+                        "msOverflowStyle": "none",
+                        "maxHeight": "100%"
                       },
                       "styles": {
                         "root": {
@@ -206,7 +198,7 @@
                           "alignItems": "center",
                           "columnGap": "12px",
                           "rowGap": "12px",
-                          "overflow": "hidden",
+                          "overflow": "auto",
                           "&:has(> section)": {
                             "display": "grid",
                             "gridTemplateColumns": "auto minmax(0, 1fr) auto auto",
@@ -421,7 +413,9 @@
                             "fontWeight": 500,
                             "height": "2.5rem",
                             "paddingInline": "1.25rem"
-                          }
+                          },
+                          "scrollbarWidth": "none",
+                          "maxHeight": "100%"
                         }
                       }
                     }
@@ -539,13 +533,6 @@
                           }
                         }
                       }
-                    }
-                  },
-                  "ScrollArea": {
-                    "defaultProps": {
-                      "type": "never",
-                      "scrollbarSize": 0,
-                      "offsetScrollbars": false
                     }
                   }
                 }

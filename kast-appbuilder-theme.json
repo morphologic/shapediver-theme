@@ -123,21 +123,6 @@
                       "w": {
                         "base": "100%",
                         "md": "auto"
-                      },
-                      "styles": {
-                        "root": {
-                          "scrollbarWidth": "none",
-                          "msOverflowStyle": "none",
-                          "& *": {
-                            "scrollbarWidth": "none",
-                            "msOverflowStyle": "none"
-                          },
-                          "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
-                            "display": "none",
-                            "width": 0,
-                            "height": 0
-                          }
-                        }
                       }
                     }
                   },
@@ -197,7 +182,11 @@
                         "--group-justify": "space-between",
                         "boxSizing": "border-box",
                         "height": "100%",
-                        "width": "100%"
+                        "width": "100%",
+                        "overflow": "auto",
+                        "scrollbarWidth": "none",
+                        "msOverflowStyle": "none",
+                        "maxHeight": "100%"
                       },
                       "styles": {
                         "root": {
@@ -418,7 +407,10 @@
                             "fontWeight": 500,
                             "height": "2.5rem",
                             "paddingInline": "1.25rem"
-                          }
+                          },
+                          "overflow": "auto",
+                          "scrollbarWidth": "none",
+                          "maxHeight": "100%"
                         }
                       }
                     }
@@ -594,13 +586,6 @@
                           }
                         }
                       }
-                    }
-                  },
-                  "ScrollArea": {
-                    "defaultProps": {
-                      "type": "never",
-                      "scrollbarSize": 0,
-                      "offsetScrollbars": false
                     }
                   }
                 }
