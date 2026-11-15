@@ -62,8 +62,8 @@
           },
           "rightColumns": 1,
           "bottomRows": {
-            "base": 3,
-            "md": 1
+            "base": 6,
+            "md": 2
           },
           "bottomFullWidth": false,
           "rightBorder": false,
@@ -121,13 +121,8 @@
                         "base": "100%",
                         "md": "auto"
                       },
-                      "styles": {
-                        "root": {
-                          "gridColumn": "1 / -1",
-                          "gridRow": 3,
-                          "minWidth": 0
-                        }
-                      }
+                      "px": 0,
+                      "py": 0
                     }
                   },
                   "Group": {
@@ -135,7 +130,7 @@
                       "align": "center",
                       "gap": 12,
                       "justify": "space-between",
-                      "wrap": "nowrap",
+                      "wrap": "wrap",
                       "style": {
                         "--group-align": "center",
                         "--group-gap": "12px",
@@ -149,273 +144,129 @@
                       }
                     }
                   },
+                  "Stack": {
+                    "defaultProps": {
+                      "gap": 12,
+                      "style": {
+                        "display": "grid",
+                        "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 14rem), 1fr))",
+                        "alignItems": "center",
+                        "width": "100%"
+                      }
+                    }
+                  },
+                  "Button": {
+                    "defaultProps": {
+                      "style": {
+                        "maxWidth": "calc(100% - 1.5rem)",
+                        "minWidth": 0
+                      }
+                    }
+                  },
                   "AppBuilderHorizontalContainer": {
                     "defaultProps": {
                       "w": "100%",
-                      "h": "100%",
-                      "display": {
-                        "base": "grid",
-                        "md": "flex"
-                      },
+                      "h": "auto",
                       "justify": "space-between",
                       "align": "center",
                       "gap": 12,
-                      "wrap": "nowrap",
-                      "p": {
-                        "base": 24,
-                        "md": 12
-                      },
+                      "wrap": "wrap",
+                      "p": 12,
                       "style": {
-                        "--group-align": "center",
-                        "--group-gap": "12px",
-                        "--group-justify": "space-between",
                         "boxSizing": "border-box",
-                        "height": "100%",
                         "width": "100%",
-                        "gridColumn": "1 / -1",
-                        "gridRow": "1 / -1",
-                        "gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
-                        "gridTemplateRows": "minmax(1.75rem, auto) 40px 40px",
-                        "alignContent": "center",
-                        "alignItems": "center",
-                        "columnGap": "12px",
-                        "rowGap": "12px",
+                        "height": "auto",
+                        "maxHeight": "100%",
                         "overflow": "clip",
-                        "scrollbarWidth": "none",
-                        "msOverflowStyle": "none",
-                        "maxHeight": "100%"
+                        "alignItems": "center",
+                        "alignContent": "center",
+                        "flexWrap": "wrap",
+                        "gap": "12px"
                       },
                       "styles": {
                         "root": {
                           "boxSizing": "border-box",
                           "width": "100%",
-                          "height": "100%",
-                          "gridColumn": "1 / -1",
-                          "gridRow": "1 / -1",
-                          "gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
-                          "gridTemplateRows": "minmax(1.75rem, auto) 40px 40px",
-                          "alignContent": "center",
-                          "alignItems": "center",
-                          "columnGap": "12px",
-                          "rowGap": "12px",
+                          "height": "auto",
+                          "maxHeight": "100%",
                           "overflow": "clip",
-                          "&:has(> section)": {
-                            "display": "grid",
-                            "gridTemplateColumns": "auto minmax(0, 1fr) auto auto",
-                            "grid-template-columns": "auto minmax(0, 1fr) auto auto",
-                            "alignContent": "center",
-                            "alignItems": "center",
-                            "align-content": "center",
-                            "align-items": "center",
-                            "columnGap": "12px",
-                            "overflow": "hidden",
-                            "textAlign": "center",
-                            "text-align": "center",
-                            "justifyContent": "stretch",
-                            "padding": "12px",
-                            "width": "100%"
-                          },
-                          "&:has(> section) > section": {
-                            "minWidth": 0
-                          },
-                          "&:has(> section) > section:nth-of-type(1)": {
-                            "gridColumn": "1",
-                            "grid-column": "1",
-                            "justifySelf": "start",
-                            "justify-self": "start"
-                          },
-                          "&:has(> section) > section:nth-of-type(2)": {
-                            "gridColumn": "3",
-                            "grid-column": "3",
-                            "justifySelf": "end",
-                            "justify-self": "end",
-                            "marginLeft": "auto",
-                            "margin-left": "auto",
-                            "minWidth": 0
-                          },
-                          "&:has(> section) > section:nth-of-type(3)": {
-                            "gridColumn": "4",
-                            "grid-column": "4",
-                            "justifySelf": "end",
-                            "justify-self": "end"
-                          },
-                          "& > section > .mantine-Paper-root": {
-                            "backgroundColor": "transparent !important",
-                            "boxShadow": "none !important",
-                            "padding": "0 !important"
-                          },
-                          "& > section:first-of-type": {
-                            "gridColumn": "1",
-                            "grid-column": "1",
-                            "justifySelf": "start",
-                            "justify-self": "start"
-                          },
-                          "& > section:first-of-type .mantine-Group-root": {
-                            "--group-align": "center",
-                            "--group-gap": "12px",
-                            "--group-justify": "flex-start",
-                            "--group-wrap": "nowrap",
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexWrap": "nowrap",
-                            "justifyContent": "flex-start"
-                          },
-                          "& > section:first-of-type button": {
-                            "--button-bg": "#ffffff !important",
-                            "--button-bd": "1px solid #d9d9d9 !important",
-                            "--button-color": "#2b2b2b !important",
-                            "--button-hover": "#f7f7f7 !important",
-                            "backgroundColor": "#ffffff !important",
-                            "border": "1px solid #d9d9d9 !important",
-                            "color": "#2b2b2b !important",
-                            "borderRadius": "999px",
-                            "fontSize": "0.875rem",
-                            "fontWeight": 500,
-                            "height": "2.5rem",
-                            "paddingInline": "1.25rem"
-                          },
-                          "& > *:nth-child(1) button, & > *:nth-child(1) .mantine-Button-root, & > *:nth-child(2) button, & > *:nth-child(2) .mantine-Button-root": {
-                            "--button-bg": "#ffffff !important",
-                            "--button-bd": "1px solid #d9d9d9 !important",
-                            "--button-color": "#2b2b2b !important",
-                            "--button-hover": "#f7f7f7 !important",
-                            "backgroundColor": "#ffffff !important",
-                            "border": "1px solid #d9d9d9 !important",
-                            "borderRadius": "999px",
-                            "color": "#2b2b2b !important",
-                            "fontSize": "0.875rem",
-                            "fontWeight": 500,
-                            "height": "2.5rem",
-                            "paddingInline": "1.25rem"
-                          },
-                          "& > section:nth-of-type(2)": {
-                            "gridColumn": "3",
-                            "grid-column": "3",
-                            "justifySelf": "end",
-                            "justify-self": "end",
-                            "marginLeft": "auto",
-                            "margin-left": "auto",
-                            "minWidth": 0
-                          },
-                          "& > section:nth-of-type(2) .mantine-Paper-root": {
-                            "backgroundColor": "transparent !important",
-                            "marginLeft": "auto",
-                            "margin-left": "auto",
-                            "padding": "0 !important"
-                          },
-                          "&:has(> .mantine-Paper-root) > .mantine-Paper-root": {
-                            "backgroundColor": "transparent !important",
-                            "boxShadow": "none !important",
-                            "marginLeft": "auto",
-                            "margin-left": "auto",
-                            "padding": "0 !important"
-                          },
-                          "&:has(> .mantine-Paper-root) > button": {
-                            "marginLeft": "12px",
-                            "margin-left": "12px"
-                          },
-                          "&:has(> .mantine-Paper-root) > button:not(:last-of-type)": {
-                            "--button-bg": "#ffffff !important",
-                            "--button-bd": "1px solid #d9d9d9 !important",
-                            "--button-color": "#2b2b2b !important",
-                            "--button-hover": "#f7f7f7 !important",
-                            "backgroundColor": "#ffffff !important",
-                            "border": "1px solid #d9d9d9 !important",
-                            "borderRadius": "999px",
-                            "color": "#2b2b2b !important",
-                            "fontSize": "0.875rem",
-                            "fontWeight": 500,
-                            "height": "2.5rem",
-                            "paddingInline": "1.25rem"
-                          },
-                          "&:has(> .mantine-Paper-root) > button:last-of-type": {
-                            "--button-bg": "var(--mantine-color-kastNeutral-filled) !important",
-                            "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
-                            "--button-color": "#ffffff !important",
-                            "--button-hover": "var(--mantine-color-kastNeutral-filled-hover) !important",
-                            "backgroundColor": "var(--mantine-color-kastNeutral-filled) !important",
-                            "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
-                            "borderRadius": "999px",
-                            "color": "#ffffff !important",
-                            "fontSize": "0.875rem",
-                            "fontWeight": 500,
-                            "height": "2.5rem",
-                            "paddingInline": "1.25rem"
-                          },
-                          "& > section:nth-of-type(2) *": {
-                            "fontSize": "1.5rem",
-                            "fontWeight": 700,
-                            "lineHeight": "1.1",
-                            "whiteSpace": "nowrap"
-                          },
-                          "& > section:nth-of-type(2) p, & > section:nth-of-type(2) span": {
-                            "fontSize": "1rem",
-                            "fontWeight": 400
-                          },
-                          "& > section:nth-of-type(2) strong, & > section:nth-of-type(2) b, & > section:nth-of-type(2) h1, & > section:nth-of-type(2) h2, & > section:nth-of-type(2) h3": {
-                            "fontSize": "1.5rem",
-                            "fontWeight": 700
-                          },
-                          "& > section:last-of-type": {
-                            "gridColumn": "4",
-                            "grid-column": "4",
-                            "justifySelf": "end",
-                            "justify-self": "end"
-                          },
-                          "& > section:last-of-type .mantine-Group-root": {
-                            "--group-align": "center",
-                            "--group-gap": "12px",
-                            "--group-justify": "flex-end",
-                            "--group-wrap": "nowrap",
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexWrap": "nowrap",
-                            "justifyContent": "flex-end"
-                          },
-                          "& > section:last-of-type button": {
-                            "--button-bg": "var(--mantine-color-kastNeutral-filled) !important",
-                            "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
-                            "--button-color": "#ffffff !important",
-                            "--button-hover": "var(--mantine-color-kastNeutral-filled-hover) !important",
-                            "backgroundColor": "var(--mantine-color-kastNeutral-filled) !important",
-                            "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
-                            "color": "#ffffff !important",
-                            "borderRadius": "999px",
-                            "fontSize": "0.875rem",
-                            "fontWeight": 500,
-                            "height": "2.5rem",
-                            "paddingInline": "1.25rem"
-                          },
-                          "& > *:nth-child(3) button, & > *:nth-child(3) .mantine-Button-root, & > *:last-child button, & > *:last-child .mantine-Button-root": {
-                            "--button-bg": "var(--mantine-color-kastNeutral-filled) !important",
-                            "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
-                            "--button-color": "#ffffff !important",
-                            "--button-hover": "var(--mantine-color-kastNeutral-filled-hover) !important",
-                            "backgroundColor": "var(--mantine-color-kastNeutral-filled) !important",
-                            "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
-                            "borderRadius": "999px",
-                            "color": "#ffffff !important",
-                            "fontSize": "0.875rem",
-                            "fontWeight": 500,
-                            "height": "2.5rem",
-                            "paddingInline": "1.25rem"
-                          },
-                          "& > button:last-of-type": {
-                            "--button-bg": "var(--mantine-color-kastNeutral-filled) !important",
-                            "--button-bd": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
-                            "--button-color": "#ffffff !important",
-                            "--button-hover": "var(--mantine-color-kastNeutral-filled-hover) !important",
-                            "backgroundColor": "var(--mantine-color-kastNeutral-filled) !important",
-                            "border": "calc(0.0625rem * var(--mantine-scale)) solid transparent !important",
-                            "borderRadius": "999px",
-                            "color": "#ffffff !important",
-                            "fontSize": "0.875rem",
-                            "fontWeight": 500,
-                            "height": "2.5rem",
-                            "paddingInline": "1.25rem"
-                          },
-                          "scrollbarWidth": "none",
-                          "maxHeight": "100%"
+                          "alignItems": "center",
+                          "alignContent": "center",
+                          "flexWrap": "wrap",
+                          "gap": "12px"
+                        }
+                      },
+                      "display": "flex"
+                    }
+                  },
+                  "AppBuilderFormWidgetComponent": {
+                    "defaultProps": {
+                      "stackProps": {
+                        "gap": 12
+                      },
+                      "formPaperProps": {
+                        "withBorder": false,
+                        "shadow": "none",
+                        "p": 0,
+                        "style": {
+                          "backgroundColor": "transparent",
+                          "width": "min(36rem, calc(100vw - 3rem))"
+                        },
+                        "styles": {
+                          "root": {
+                            "gridColumn": "auto",
+                            "gridRow": "auto"
+                          }
+                        },
+                        "px": 0,
+                        "py": 0
+                      },
+                      "elementPaperProps": {
+                        "withBorder": false,
+                        "shadow": "none",
+                        "p": 0,
+                        "style": {
+                          "backgroundColor": "transparent",
+                          "minWidth": 0,
+                          "width": "100%"
+                        },
+                        "styles": {
+                          "root": {
+                            "gridColumn": "auto",
+                            "gridRow": "auto"
+                          }
+                        },
+                        "px": 0,
+                        "py": 0
+                      },
+                      "exportPaperProps": {
+                        "withBorder": false,
+                        "shadow": "none",
+                        "p": 0,
+                        "style": {
+                          "backgroundColor": "transparent",
+                          "margin": 0,
+                          "width": "100%"
+                        },
+                        "styles": {
+                          "root": {
+                            "gridColumn": "auto",
+                            "gridRow": "auto"
+                          }
+                        },
+                        "px": 0,
+                        "py": 0
+                      },
+                      "submitButtonProps": {
+                        "fullWidth": true,
+                        "fw": 600,
+                        "mt": 0,
+                        "h": "2.5rem",
+                        "px": "1.25rem",
+                        "style": {
+                          "--mantine-color-disabled": "#d9d9d9",
+                          "--mantine-color-disabled-color": "#4b4b4b",
+                          "maxWidth": "100%"
                         }
                       }
                     }
@@ -440,14 +291,9 @@
                         "backgroundColor": "var(--mantine-color-kastNeutral-filled)",
                         "color": "#ffffff",
                         "height": "2.5rem",
+                        "maxWidth": "calc(100% - 1.5rem)",
+                        "minWidth": 0,
                         "paddingInline": "1.25rem"
-                      },
-                      "styles": {
-                        "root": {
-                          "gridColumn": "1 / -1",
-                          "gridRow": 2,
-                          "minWidth": 0
-                        }
                       },
                       "actionIconProps": {
                         "size": "2.5rem",
@@ -475,15 +321,13 @@
                           "alignItems": "center",
                           "display": "flex",
                           "fontSize": "1.5rem",
-                          "height": "auto !important",
-                          "marginLeft": "auto",
+                          "height": "auto",
+                          "marginLeft": 0,
                           "minHeight": 0,
-                          "overflow": "visible !important",
+                          "overflow": "clip",
                           "padding": "0 !important",
                           "whiteSpace": "nowrap",
-                          "gridColumn": "1 / -1",
-                          "gridRow": 1,
-                          "justifySelf": "end"
+                          "maxHeight": "40px"
                         }
                       }
                     }
@@ -533,6 +377,11 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "ParameterLabelComponent": {
+                    "defaultProps": {
+                      "display": "none"
                     }
                   }
                 }
