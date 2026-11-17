@@ -323,13 +323,20 @@
                           "display": "flex",
                           "fontSize": "1.25rem",
                           "height": "auto",
-                          "marginLeft": "auto",
                           "minHeight": 0,
                           "overflow": "clip",
                           "padding": "0 !important",
                           "whiteSpace": "nowrap",
                           "maxHeight": "40px"
                         }
+                      },
+                      "ml": {
+                        "base": "auto",
+                        "md": "auto"
+                      },
+                      "mr": {
+                        "base": "auto",
+                        "md": 0
                       }
                     }
                   },
