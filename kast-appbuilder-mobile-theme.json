@@ -321,7 +321,7 @@
                         "root": {
                           "alignItems": "center",
                           "display": "flex",
-                          "fontSize": "1.5rem",
+                          "fontSize": "1.25rem",
                           "height": "auto",
                           "marginLeft": "auto",
                           "minHeight": 0,
@@ -371,7 +371,7 @@
                             },
                             "styles": {
                               "root": {
-                                "fontSize": "1.5rem",
+                                "fontSize": "1.25rem",
                                 "marginBottom": "0"
                               }
                             }
