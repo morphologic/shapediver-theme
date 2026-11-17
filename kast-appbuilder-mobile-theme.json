@@ -149,10 +149,14 @@
                     "defaultProps": {
                       "gap": 12,
                       "style": {
-                        "display": "grid",
                         "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 14rem), 1fr))",
-                        "alignItems": "center",
-                        "width": "100%"
+                        "alignItems": "stretch",
+                        "width": "100%",
+                        "flexDirection": "column"
+                      },
+                      "display": {
+                        "base": "flex",
+                        "md": "grid"
                       }
                     }
                   },
@@ -210,8 +214,7 @@
                         "shadow": "none",
                         "p": 0,
                         "style": {
-                          "backgroundColor": "transparent",
-                          "width": "min(36rem, calc(100vw - 0.75rem))"
+                          "backgroundColor": "transparent"
                         },
                         "styles": {
                           "root": {
@@ -220,7 +223,11 @@
                           }
                         },
                         "px": 0,
-                        "py": 0
+                        "py": 0,
+                        "w": {
+                          "base": "calc(100vw - 0.75rem)",
+                          "md": "36rem"
+                        }
                       },
                       "elementPaperProps": {
                         "withBorder": false,
