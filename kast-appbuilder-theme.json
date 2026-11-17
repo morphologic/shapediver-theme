@@ -290,7 +290,7 @@
                       "fw": 500,
                       "size": "sm",
                       "w": {
-                        "base": "100%",
+                        "base": "auto",
                         "md": "auto"
                       },
                       "style": {
@@ -304,7 +304,8 @@
                         "height": "2.5rem",
                         "maxWidth": "100%",
                         "minWidth": 0,
-                        "paddingInline": "1.25rem"
+                        "paddingInline": "0.75rem",
+                        "flex": "0 1 auto"
                       },
                       "actionIconProps": {
                         "size": "2.5rem",
@@ -345,7 +346,7 @@
                         "md": "auto"
                       },
                       "mr": {
-                        "base": "auto",
+                        "base": 0,
                         "md": 0
                       }
                     }
