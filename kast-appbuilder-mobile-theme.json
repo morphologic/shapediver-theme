@@ -159,7 +159,7 @@
                   "Button": {
                     "defaultProps": {
                       "style": {
-                        "maxWidth": "calc(100% - 1.5rem)",
+                        "maxWidth": "100%",
                         "minWidth": 0
                       }
                     }
@@ -211,7 +211,7 @@
                         "p": 0,
                         "style": {
                           "backgroundColor": "transparent",
-                          "width": "min(36rem, calc(100vw - 3rem))"
+                          "width": "min(36rem, calc(100vw - 0.75rem))"
                         },
                         "styles": {
                           "root": {
@@ -292,7 +292,7 @@
                         "backgroundColor": "var(--mantine-color-kastNeutral-filled)",
                         "color": "#ffffff",
                         "height": "2.5rem",
-                        "maxWidth": "calc(100% - 1.5rem)",
+                        "maxWidth": "100%",
                         "minWidth": 0,
                         "paddingInline": "1.25rem"
                       },
