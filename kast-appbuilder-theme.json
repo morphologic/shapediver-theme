@@ -326,7 +326,7 @@
                           "display": "flex",
                           "fontSize": "1.5rem",
                           "height": "auto",
-                          "marginLeft": 0,
+                          "marginLeft": "auto",
                           "minHeight": 0,
                           "overflow": "clip",
                           "padding": "0 !important",
